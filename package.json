@@ -1,0 +1,15 @@
+{
+  "name": "explosivejames.objectexporter",
+  "version": "0.9.0",
+  "description": "A tool to combine and export meshes into .obj.",
+  "keywords": [
+    "object",
+    "exporter",
+    "obj"
+  ],
+  "author": {
+    "name": "Explosive James",
+    "email": "theexplosivejames@gmail.com"
+  },
+  "displayName":  "Object Exporter"
+}
