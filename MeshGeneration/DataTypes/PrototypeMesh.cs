@@ -41,7 +41,12 @@ namespace ObjectExporter.MeshCombining.DataTypes
         {
             meshName ??= string.Empty;
 
+            IndexFormat targetFormat = Vertices.Count >= ushort.MaxValue ?
+                IndexFormat.UInt32 : IndexFormat.UInt16;
+
             Mesh result = new Mesh() {
+
+                indexFormat = targetFormat,
 
                 vertices = Vertices.ToArray(),
                 normals = Normals.ToArray(),
